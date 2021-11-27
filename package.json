@@ -1,0 +1,22 @@
+{
+  "name": "update-stl-header",
+  "version": "1.0.0",
+  "description": "Update stl header",
+  "main": "update-stl-header.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QQBoxy/update-stl-header.git"
+  },
+  "author": "QQBoxy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QQBoxy/update-stl-header/issues"
+  },
+  "homepage": "https://github.com/QQBoxy/update-stl-header#readme",
+  "dependencies": {
+    "commander": "^8.3.0"
+  }
+}
