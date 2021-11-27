@@ -3,6 +3,7 @@
  File: update-stl-header.js
  Name: Update stl header
  Explain: Update binary STL header
+ node .\update-stl-header.js -i input.stl
  node .\update-stl-header.js -i input.stl -o output.stl
 ****************************************By QQBoxy*/
 const fs = require('fs');
@@ -21,7 +22,12 @@ const { program } = require('commander');
         // Input file
         const inputFile = path.resolve(__dirname, options.input);
         // Output file
-        const outputFile = path.resolve(__dirname, options.output);
+        let outputFile = "";
+        if (options.output) {
+            outputFile = path.resolve(__dirname, options.output);
+        } else {
+            outputFile = path.resolve(__dirname, `output_${options.input}`);
+        }
         // File exist
         const isExist = fs.existsSync(inputFile);
         if (!isExist) {
